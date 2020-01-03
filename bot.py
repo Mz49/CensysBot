@@ -107,7 +107,6 @@ class censys(discord.Client):
 
     async def on_message(self,msg):
         if not msg.content.startswith(self.pref): return
-        if msg.channel.id != 661519994152026113: return
         if msg.author.bot: return
         args = msg.content[len(self.pref):].lower().split()
         
